@@ -1,0 +1,2 @@
+When would you want to use a remote repository rather than keeping all your work local?
+It is beneficial to create a remote repository in order to collaborate and share our work with others.
