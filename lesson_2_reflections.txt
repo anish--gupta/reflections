@@ -1,0 +1,6 @@
+What happens when you initialize a repository? Why do we need to do it?
+This command initializes a new repository. This is required in order to enable git to operate on this directory and enable version control on it.
+
+How is the staging area different from the working directory and the repository? What value do you think it offers?
+Staging area is the place where added but not committed files stay. Working directory might contain those files also which are not tracked by git. Repository might have a snapshot of older version of files and will not contain the new files. Staging area enables us to add a single feature to one commit and not to clutter the repository with a single commit having multiple features.
+
