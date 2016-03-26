@@ -4,3 +4,17 @@ This command initializes a new repository. This is required in order to enable g
 How is the staging area different from the working directory and the repository? What value do you think it offers?
 Staging area is the place where added but not committed files stay. Working directory might contain those files also which are not tracked by git. Repository might have a snapshot of older version of files and will not contain the new files. Staging area enables us to add a single feature to one commit and not to clutter the repository with a single commit having multiple features.
 
+How can you use the staging area to make sure you have one commit per logical change?
+Staging area can be diff with the working directory and we should make sure that only those files should be added to the staging area which are part of one logical change.
+
+What are some situations when branches would be helpful in keeping your history organized? How would branches help?
+Branches seem to be very important when adding a new feature and we don't really want to experiment with the master especially when we ensure that master would always be in a healthy state.
+
+How do the diagrams help you visualize the branch structure?
+Its easy to track the parent branch and the commits which took place.
+
+What is the result of merging two branches together? Why do we represent it in the diagram the way we do?
+Merging two branches adds commit of one branch to the other and move the head of the branch to point to the new commit. We represent it in the diagram with two arrows to point to two parents because that commit really contains combination of both the parent commits.
+
+What are the pros and cons of Git’s automatic merging vs. always doing merges manually?
+Gits automatic merging ensures that there are no conflicting pieces of code in a file. If git finds pieces of code that potentially mean different meaning for the same existing line in the parent then, git tells for manual merges which potentially is a way to keep safety intact.
